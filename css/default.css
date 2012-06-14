@@ -1,0 +1,222 @@
+
+/***** OPCENITO *****/
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f2f6e9 url(../slike/bg.gif);
+	font: 12px verdana, sans-serif;
+	margin: 0px;	
+}
+a {
+	color: #50691f;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	color: #1D110B;	
+}
+img {
+	border: 0px;
+}
+
+.sadrzaj_container img.sadrzaj_slika {float:right;margin:0 0 0 10px;}
+.sadrzaj_container {min-height:150px;border-bottom:1px solid #fff;margin-bottom:15px;}
+
+#wrapper {
+	width: 900px;
+	margin: auto;
+	text-align: left;
+}
+h2 {
+	margin: 0px;
+	padding: 0px 0px 10px;
+	font-size:14px;	
+	color:#3d540f;
+}
+
+h3 {
+	margin: 0px;
+	padding: 0px 0px 10px;
+	font-size:12px;
+	color:#341c12;
+}
+
+h4 {
+	color: #889c60;
+	font-size:12px;
+	text-indent: 50px;
+	text-transform:uppercase;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	margin: 0px;
+	padding: 0px 0px 5px 20px;
+	list-style: none;
+	background: 0px 3px url(../slike/bullet.gif) no-repeat;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/***** NAVIGACIJA *****/
+#nav {
+	width: 840px;
+	height:48px;
+	margin: 0px 0px 5px 33px;
+	background-image:url(../slike/nav.gif);
+	background-repeat:no-repeat;
+	display:inline;
+	float:left;
+	
+}
+#nav a {
+	font-size:13px;
+	color:#fff;
+	font-family:verdana, sans-serif;
+	margin: 16px 0px 10px 0px;
+	padding: 0px 10px 0px 10px;
+	display:inline;
+	float:left;
+	border-right-width: 2px;
+	border-right-style: inset;
+	border-right-color: #000;
+}
+#nav a:hover {
+	color:#000;
+	text-decoration:none;
+}
+.lastchild 
+{
+    border-right: none 0px !important;	
+}
+
+
+/***** SREDINA *****/
+#body {
+	background: url(../slike/body_bg.gif) repeat-y;
+	clear: both;
+	width: 100%;
+}
+
+#body-sredina {
+	background: url(../slike/body_bg_bez.gif) repeat-y;
+	clear: both;
+	width: 100%;
+}
+
+#body-top {
+	background: url(../slike/body_top.gif) no-repeat;
+}
+
+#body-bot {
+	background: bottom url(../slike/body_bot.gif) no-repeat;
+	padding: 21px 25px 15px 42px;
+}
+
+#objekti-box {
+	width: 810px;
+	text-align:justify;
+}
+
+#lijevo-box {
+	float: left;
+	width: 370px;
+	text-align:justify;
+}
+
+#lijevo-box ul {
+	margin-left: 8px;
+}
+
+#desno-box {
+	float: right;
+	margin-right: 15px;
+	width: 370px;
+	text-align:justify;
+}
+
+
+
+/***** FOOTER *****/
+
+#foot {
+	width: 820px;
+	margin-left: 41px;
+	background: url(../slike/foot_bg.gif) repeat-y;
+}
+#foot-top {
+	background: url(../slike/foot_top.gif) no-repeat;
+}
+#foot-bot {
+	background: bottom url(../slike/foot_bot.gif) no-repeat;
+	padding: 13px 21px 12px 28px;
+}
+
+#dolje-lijevo-box 
+{
+    width: 370px;
+	float: left;
+	margin-left: 2px;
+}
+
+#dolje-desno-box {
+	float: right;
+	width: 370px;
+}
+
+#footer {
+	text-align: center;
+}
+
+
+/* domovi grid */
+.domovi table {border:0px;}
+
+
+/***** IZVORI *****/
+
+#leftcontainerBox {
+    -moz-border-bottom-colors: none ;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    font-size: x-small;
+    color: #849464;
+    border-bottom-right-radius: 3px;
+    border-color: #BEBEBE #BEBEBE #BEBEBE -moz-use-text-color;
+    border-style: solid solid solid none;
+    border-top-right-radius: 3px;
+    border-width: 1px 1px 1px medium;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    display: block !important;
+    left: 0;
+    position: fixed;
+    top: 185px;
+    /*width: 24px;
+    height: 99px;*/
+    z-index: 890;
+    padding: 5px;
+ }   
+
+#hps:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+#npv:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+#ppv:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}

@@ -1,0 +1,101 @@
+﻿  <%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Hrvatska, Velebit, planina, nacionalni park, priroda, degenija" />
+	<meta name="description" content="Velebit, najljepša hrvatska planina." />
+    <title>Velebit - Početna stranica</title>
+    <link rel="stylesheet" href="css/default.css" type="text/css" />
+    <link rel="stylesheet" href="css/prijava.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="slajder/engine1/style.css" />
+	<style type="text/css">a#vlb{display:none}</style>
+	<script type="text/javascript" src="slajder/engine1/jquery.js"></script>
+	<script type="text/javascript" src="slajder/engine1/prvislider.js"></script>
+    	<script type="text/javascript" src="js/objekti.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <link rel="Shortcut Icon" href="slike/favicon.ico" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">   
+        <div id="panel" style="display: none;">
+              Korisničko ime: <asp:TextBox ID="User" runat="server"></asp:TextBox>
+              Lozinka: <asp:TextBox ID="Pass" runat="server" TextMode="Password"></asp:TextBox>
+              <asp:LinkButton ID="linkPrijava" runat="server" onclick="linkPrijava_Click">Prijava</asp:LinkButton><br />
+              <asp:Label ID="lblOprijavi" runat="server" Text=""></asp:Label><br />
+              <asp:LinkButton ID="linkReg" runat="server" Visible="False" 
+                  onclick="linkReg_Click">Registracija</asp:LinkButton>
+        </div>     
+        <p class="slide"><a class="btn-slide active" href="#"></a></p>
+        <div id="odjava" align="right">        
+            <asp:Label ID="lblSession" runat="server" Text=""></asp:Label>
+            <asp:LinkButton ID="btnOdjava" runat="server" Visible="False" onclick="btnOdjava_Click">Odjava</asp:LinkButton>
+        </div> 
+<div id="wrapper">
+    <div id="prvislider-container1">
+        <div class="ws_images">
+                <span><img src="slajder/data1/images/velebit01.jpg" alt="Dabarski kukovi" title="Dabarski kukovi" id="p0"/></span>
+                <span><img src="slajder/data1/images/velebit02.jpg" alt="Visoravan Veliko i Malo Rujno" title="Visoravan Veliko i Malo Rujno" id="p1"/></span>
+                <span><img src="slajder/data1/images/velebit03.jpg" alt="Bačić kuk" title="Bačić kuk" id="p2"/></span>
+                <span><img src="slajder/data1/images/velebit04.jpg" alt="Lubenovac" title="Lubenovac" id="p3"/></span>
+                <span><img src="slajder/data1/images/velebit05.jpg" alt="Ravni Dabar i stijena Čelina" title="Ravni Dabar i stijena Čelina" id="p4"/></span>
+                <span><img src="slajder/data1/images/velebit06.jpg" alt="Dio Južnog Velebita" title="Dio Južnog Velebita" id="p5"/></span>
+                <span><img src="slajder/data1/images/velebit07.jpg" alt="Premužićeva staza" title="Premužićeva staza" id="p6"/></span>
+                <span><img src="slajder/data1/images/velebit08.jpg" alt="Tunel kroz Kukaline" title="Tunel kroz Kukaline" id="p7"/></span>
+                <span><img src="slajder/data1/images/velebit09.jpg" alt="Pogled s Velikog Sadikovca" title="Pogled s Velikog Sadikovca" id="p8"/></span>
+                <span><img src="slajder/data1/images/velebit10.jpg" alt="vJužni Velebit" title="Južni Velebit" id="p9"/></span>
+                <span><img src="slajder/data1/images/velebit11.jpg" alt="Rijeka Krupa" title="Rijeka Krupa" id="p10"/></span>
+                <span><img src="slajder/data1/images/velebit12.jpg" alt="Kanjon rijeke Krupe" title="Kanjon rijeke Krupe" id="p11"/></span>
+         </div>
+         <div class="ws_bullets">
+            <div>
+                <a href="#p0" title="Dabarski kukovi"><img src="slajder/data1/tooltips/velebit01.jpg" alt="Dabarski kukovi"/>1</a>
+                <a href="#p1" title="Visoravan Veliko i Malo Rujno"><img src="slajder/data1/tooltips/velebit02.jpg" alt="Visoravan Veliko i Malo Rujno"/>2</a>
+                <a href="#p2" title="Bačić kuk"><img src="slajder/data1/tooltips/velebit03.jpg" alt="Bačić kuk"/>3</a>
+                <a href="#p3" title="Lubenovac"><img src="slajder/data1/tooltips/velebit04.jpg" alt="Lubenovac"/>4</a>
+                <a href="#p4" title="Ravni Dabar i stijena Čelina"><img src="slajder/data1/tooltips/velebit05.jpg" alt="Ravni Dabar i stijena Čelina"/>5</a>
+                <a href="#p5" title="Dio Južnog Velebita"><img src="slajder/data1/tooltips/velebit06.jpg" alt="Dio Južnog Velebita"/>6</a>
+                <a href="#p6" title="Premužićeva staza"><img src="slajder/data1/tooltips/velebit07.jpg" alt="Premužićeva staza"/>7</a>
+                <a href="#p7" title="Tunel kroz Kukaline"><img src="slajder/data1/tooltips/velebit08.jpg" alt="Tunel kroz Kukaline"/>8</a>
+                <a href="#p8" title="Pogled s Velikog Sadikovca"><img src="slajder/data1/tooltips/velebit09.jpg" alt="Pogled s Velikog Sadikovca"/>9</a>
+                <a href="#p9" title="Južni Velebit"><img src="slajder/data1/tooltips/velebit10.jpg" alt="Južni Velebit"/>10</a>
+                <a href="#p10" title="Rijeka Krupa"><img src="slajder/data1/tooltips/velebit11.jpg" alt="Rijeka Krupa"/>11</a>
+                <a href="#p11" title="Kanjon rijeke Krupe"><img src="slajder/data1/tooltips/velebit12.jpg" alt="Kanjon rijeke Krupe"/>12</a>
+           </div>
+       </div>
+          <div class="ws_shadow"></div>
+    </div>
+          <script type="text/javascript" src="slajder/engine1/script.js"></script>
+              
+  		<div id="nav">
+			<a href="Default.aspx">POČETNA</a>
+			<a href="Pl_domovi.aspx?id=1">PLANINARSKI DOMOVI</a>
+            <a href="Pl_domovi.aspx?id=2">PLANINARSKA SKLONIŠTA</a>			
+			<a href="Flora_fauna.aspx">FLORA I FAUNA</a>
+            <a href="#">ISKUSTVA</a>
+            <a class="lastchild" href="Kontakt.aspx">KONTAKT</a>			
+		</div>
+   
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+            
+</div> 
+        <div id="footer">&copy; Svjetlana Čolak, OWS, VsiTe</div>
+           <div id="leftcontainerBox">
+                Izvori:<br />
+                     <a href="http://www.hps.hr/"><img id ="hps" src="slike/hps.jpg" 
+                             alt="Hrvatski planinarski savez" title="Hrvatski planinarski savez" /></a><br />
+                     <a href="http://www.np-sjeverni-velebit.hr/"><img id ="npv" src="slike/npv.jpg" 
+                             alt="Nacionalni park Sjeverni Velebit" title="Nacionalni park Sjeverni Velebit" /></a><br />
+                     <a href="http://www.pp-velebit.hr/"><img id ="ppv" src="slike/ppv.jpg" 
+                             alt="Park prirode Velebit" title="Park prirode Velebit" /></a><br />          
+           </div>
+      </form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+﻿/***** PRIJAVA *****/
+
+a:focus {
+    outline: none;
+}
+#panel {
+    font-size:x-small;
+    color: #50691f;
+    display: none;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);    
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-slide {
+    background: #f2f6e9 url(../slike/pull-down.png);
+    text-align: center;
+    width: 41px;
+    height: 28px;
+    margin: 0 auto;
+    display: block;
+    color: #849464;
+}
+
+#User,#Pass, input {
+    border:1px solid #849464;
+    border-radius:3px;
+    width:100px;
+    height:15px;
+}
+
+ /***** REGISTRACIJA *****/
+ 
+table{padding: 20px;} 
+
+#MainContent_boxIme,#MainContent_boxPrezime,
+#MainContent_boxUser,#MainContent_boxLoz1,#MainContent_boxLoz1,#MainContent_boxLoz2,
+#MainContent_boxEmail {width:200px;height: 20px;}  
+
+td { 
+    text-align:right;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px;   
+}
+
+#MainContent_btnReg
+{
+    width:60px;
+    height: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    float:right;
+    margin:0 360px 25px 0;
+}
+
+#MainContent_btnKontakt
+{
+    width:60px;
+    height: 22px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin:5px 0 5px 0;
+}
+
+/***** ODJAVA *****/
+
+#odjava {
+    font-size:x-small;
+    margin: 0 250px 0 0; 
+}
+
+
