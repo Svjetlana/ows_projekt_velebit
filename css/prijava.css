@@ -26,11 +26,21 @@ a:focus {
     color: #849464;
 }
 
-#User,#Pass, input {
+#User,#Pass {
     border:1px solid #849464;
     border-radius:3px;
     width:100px;
     height:15px;
+}
+
+#linkRgistracija {
+    float: right;
+    margin:15px 0 0 0;
+}
+    
+#lblOprijavi {
+    float: right;
+    margin:15px 60px 0 0;
 }
 
  /***** REGISTRACIJA *****/
@@ -69,7 +79,7 @@ td {
 
 #odjava {
     font-size:x-small;
-    margin: 0 250px 0 0; 
+    text-align: center; 
 }
 
 

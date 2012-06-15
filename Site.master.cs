@@ -51,16 +51,18 @@ public partial class SiteMaster : System.Web.UI.MasterPage
         else
         {
             Response.Cookies["login_cookie"].Value = "true";
-            lblOprijavi.Text = "<strong>Provjerite vaš unos ili se registrirajte !!!</strong>";
-            linkReg.Visible = true;
+            lblOprijavi.Text = "<strong>NISTE REGISTRIRANI !</strong>";
+            User.Text = ""; 
         }
 
         citac.Close();
         mojaKonekcija.Close();
     }
 
-    protected void linkReg_Click(object sender, EventArgs e)
+     protected void linkRegistracija_Click(object sender, EventArgs e)
     {
         Response.Redirect("Registracija.aspx");
     }
+   
 }
+

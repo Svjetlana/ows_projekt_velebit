@@ -13,8 +13,8 @@
 	<style type="text/css">a#vlb{display:none}</style>
 	<script type="text/javascript" src="slajder/engine1/jquery.js"></script>
 	<script type="text/javascript" src="slajder/engine1/prvislider.js"></script>
-    	<script type="text/javascript" src="js/objekti.js"></script>
-	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/objekti.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <link rel="Shortcut Icon" href="slike/favicon.ico" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
@@ -25,12 +25,11 @@
               Korisničko ime: <asp:TextBox ID="User" runat="server"></asp:TextBox>
               Lozinka: <asp:TextBox ID="Pass" runat="server" TextMode="Password"></asp:TextBox>
               <asp:LinkButton ID="linkPrijava" runat="server" onclick="linkPrijava_Click">Prijava</asp:LinkButton><br />
+              <asp:LinkButton ID="linkRgistracija" runat="server" onclick="linkRegistracija_Click">Registracija</asp:LinkButton>
               <asp:Label ID="lblOprijavi" runat="server" Text=""></asp:Label><br />
-              <asp:LinkButton ID="linkReg" runat="server" Visible="False" 
-                  onclick="linkReg_Click">Registracija</asp:LinkButton>
         </div>     
         <p class="slide"><a class="btn-slide active" href="#"></a></p>
-        <div id="odjava" align="right">        
+        <div id="odjava">        
             <asp:Label ID="lblSession" runat="server" Text=""></asp:Label>
             <asp:LinkButton ID="btnOdjava" runat="server" Visible="False" onclick="btnOdjava_Click">Odjava</asp:LinkButton>
         </div> 
@@ -89,12 +88,9 @@
         <div id="footer">&copy; Svjetlana Čolak, OWS, VsiTe</div>
            <div id="leftcontainerBox">
                 Izvori:<br />
-                     <a href="http://www.hps.hr/"><img id ="hps" src="slike/hps.jpg" 
-                             alt="Hrvatski planinarski savez" title="Hrvatski planinarski savez" /></a><br />
-                     <a href="http://www.np-sjeverni-velebit.hr/"><img id ="npv" src="slike/npv.jpg" 
-                             alt="Nacionalni park Sjeverni Velebit" title="Nacionalni park Sjeverni Velebit" /></a><br />
-                     <a href="http://www.pp-velebit.hr/"><img id ="ppv" src="slike/ppv.jpg" 
-                             alt="Park prirode Velebit" title="Park prirode Velebit" /></a><br />          
+                     <a href="http://www.hps.hr/"><img id ="hps" src="slike/hps.jpg" title="Hrvatski planinarski savez" /></a><br />
+                     <a href="http://www.np-sjeverni-velebit.hr/"><img id ="npv" src="slike/npv.jpg" title="Nacionalni park Sjeverni Velebit" /></a><br />
+                     <a href="http://www.pp-velebit.hr/"><img id ="ppv" src="slike/ppv.jpg" title="Park prirode Velebit" /></a><br />          
            </div>
       </form>
 </body>

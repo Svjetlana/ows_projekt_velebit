@@ -38,8 +38,9 @@ public partial class Flora_fauna : System.Web.UI.Page
         command.Parameters.AddWithValue("password", hashlozinka);
         SqlDataReader citac = command.ExecuteReader();
 
-		if (citac.Read())
+        if (citac.Read())
         {
+
             Session["LogiraniUser"] = "Pozdrav," + " " + citac["Ime"] + " " + "|";
             Session["korisnikID"] = citac["ID_korisnik"];
             Response.Cookies["login_cookie"].Value = "false";
@@ -50,14 +51,15 @@ public partial class Flora_fauna : System.Web.UI.Page
         else
         {
             Response.Cookies["login_cookie"].Value = "true";
-            lblOprijavi.Text = "<strong>Provjerite vaš unos ili se registrirajte !!!</strong>";
-            linkReg.Visible = true;
+            lblOprijavi.Text = "<strong>NISTE REGISTRIRANI!</strong>";
+            User.Text = "";
         }
-			citac.Close();
-			mojaKonekcija.Close();
-	}
 
-	protected void linkReg_Click(object sender, EventArgs e)
+        citac.Close();
+        mojaKonekcija.Close();
+    }
+
+    protected void linkRegistracija_Click(object sender, EventArgs e)
     {
         Response.Redirect("Registracija.aspx");
     }

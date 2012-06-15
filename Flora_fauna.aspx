@@ -14,8 +14,8 @@
 	<style type="text/css">a#vlb{display:none}</style>
 	<script type="text/javascript" src="slajder/engine2/jquery.js"></script>
 	<script type="text/javascript" src="slajder/engine2/drugislider.js"></script>
-    	<script type="text/javascript" src="js/objekti.js"></script>
-	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/objekti.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <link rel="Shortcut Icon" href="slike/favicon.ico" />
 </head>
 <body>
@@ -26,8 +26,7 @@
               Lozinka: <asp:TextBox ID="Pass" runat="server" TextMode="Password"></asp:TextBox>
               <asp:LinkButton ID="linkPrijava" runat="server" onclick="linkPrijava_Click">Prijava</asp:LinkButton><br />
               <asp:Label ID="lblOprijavi" runat="server" Text=""></asp:Label>
-              <asp:LinkButton ID="linkReg" runat="server" Visible="False" 
-                  onclick="linkReg_Click">Registracija</asp:LinkButton>
+              <asp:LinkButton ID="linkReg" runat="server" onclick="linkRegistracija_Click">Registracija</asp:LinkButton>
         </div>     
         <p class="slide"><a class="btn-slide active" href="#"></a></p>
          <div id="odjava" align="right">        
@@ -38,8 +37,8 @@
     	<div class="ws_images">
             <span><img src="slajder/data2/images/flo01.jpg" alt="Velebitska degenija" title="Velebitska degenija" id="d0"/></span>
             <span><img src="slajder/data2/images/flo02.jpg" alt="Doručak" title="Doručak" id="d1"/></span>
-            <span><img src="slajder/data2/images/flo03.jpg" alt="flo03" title="Čičak" id="d2"/></span>
-            <span><img src="slajder/data2/images/flo04.jpg" alt="flo04" title="Žuta ivančica" id="d3"/></span>
+            <span><img src="slajder/data2/images/flo03.jpg" alt="flo03" title="flo03" id="d2"/></span>
+            <span><img src="slajder/data2/images/flo04.jpg" alt="flo04" title="flo04" id="d3"/></span>
             <span><img src="slajder/data2/images/flo05.jpg" alt="Gljiva škriplin" title="Gljiva škriplin" id="d4"/></span>
             <span><img src="slajder/data2/images/flo06.jpg" alt="Doručak" title="Doručak" id="d5"/></span>
             <span><img src="slajder/data2/images/flo07.jpg" alt="Skakavac" title="Skakavac" id="d6"/></span>
@@ -49,8 +48,8 @@
         <div class="ws_bullets"><div>
             <a href="#d0" title="Velebitska degenija"><img src="slajder/data2/tooltips/flo01.jpg" alt="Velebitska degenija"/>1</a>
             <a href="#d1" title="Doručak"><img src="slajder/data2/tooltips/flo02.jpg" alt="Doručak"/>2</a>
-            <a href="#d2" title="flo03"><img src="slajder/data2/tooltips/flo03.jpg" alt="Čičak"/>3</a>
-            <a href="#d3" title="flo04"><img src="slajder/data2/tooltips/flo04.jpg" alt="Žuta ivančica"/>4</a>
+            <a href="#d2" title="flo03"><img src="slajder/data2/tooltips/flo03.jpg" alt="flo03"/>3</a>
+            <a href="#d3" title="flo04"><img src="slajder/data2/tooltips/flo04.jpg" alt="flo04"/>4</a>
             <a href="#d4" title="Gljiva škriplin"><img src="slajder/data2/tooltips/flo05.jpg" alt="Gljiva škriplin"/>5</a>
             <a href="#d5" title="Doručak"><img src="slajder/data2/tooltips/flo06.jpg" alt="Doručak"/>6</a>
             <a href="#d6" title="Skakavac"><img src="slajder/data2/tooltips/flo07.jpg" alt="Skakavac"/>7</a>
